@@ -20,3 +20,11 @@ Cybersecurity and data privacy - Spring 2025
 | 6.2.2025 | 2 | Authentication  | Solve two authentication labs |
 | 6.2.2025 | 1 | Access Control  | Read about the access control vulnerabilities |
 | 7.2.2025 | 1 | Access Control   | Solve two access control labs |
+| 7.2.2025 | 1 | Access Control   | Solve two access control labs |
+| 17.2.2025 | 2 | Penetration Testing   | Studied about penetration testings |
+| 18.2.2025 | 2 | Setup Environment  | Setup Kali Linux in Virtual box , faced some errors during startup |
+| 18.2.2025 | 1 | Docker Compose  | Setup docker and installed project with yaml file |
+| 19.2.2025 | 1 | PSQL   | Learned basic commands for psql cli |
+| 19.2.2025 | 1 | ZAP Tools   | Learned important functions in ZAP connecting from the app server |
+| 20.2.2025 | 1 | Chrome Dev Tools  | Learned about Network Request/Response and XHR export |
+| 20.2.2025 | 2 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
