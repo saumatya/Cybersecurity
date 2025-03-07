@@ -28,3 +28,5 @@ Cybersecurity and data privacy - Spring 2025
 | 19.2.2025 | 1 | ZAP Tools   | Learned important functions in ZAP connecting from the app server |
 | 20.2.2025 | 1 | Chrome Dev Tools  | Learned about Network Request/Response and XHR export |
 | 20.2.2025 | 2 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
+| 05.3.2025 | 2 | Booking Phase Part 2  | Downloaded Docker Compose file from GitHub, encountered errors, troubleshot, and fixed them |
+| 05.3.2025 | 1 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
