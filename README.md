@@ -30,3 +30,5 @@ Cybersecurity and data privacy - Spring 2025
 | 20.2.2025 | 2 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
 | 05.3.2025 | 2 | Booking Phase Part 2  | Downloaded Docker Compose file from GitHub, encountered errors, troubleshot, and fixed them |
 | 05.3.2025 | 1 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
+| 13.3.2025 | 2 | Testing with hashcat  | Ran dictionary attack |
+| 16.3.2025 | 2 | Testing with hashcat  | Ran hashcat attack based on characters |
