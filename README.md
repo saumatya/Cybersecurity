@@ -32,3 +32,5 @@ Cybersecurity and data privacy - Spring 2025
 | 05.3.2025 | 1 | Testing with ZAP  | Ran active scan attack to find vulnerabilities in the booking app and found alerts |
 | 13.3.2025 | 2 | Testing with hashcat  | Ran dictionary attack |
 | 16.3.2025 | 2 | Testing with hashcat  | Ran hashcat attack based on characters |
+| 22.3.2025 | 2 | Testing with burpsuite  | Ran attack with burpsuite |
+| 23.3.2025 | 2 | Testing with hydra  | Ran attack with hydra |
