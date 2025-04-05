@@ -3,13 +3,11 @@ Page / Feature                | Guest        | Reserver         | Administrator
 / (index)                    | ✅           | ✅               | ✅
 └─ View resource form        | ❌           | ✅               | ✅ *note added
 └─ Create new resource       | ❌ *1        | ❌ *2            | ✅ *3
-
-/login                        | ✅           | ✅               | ✅
+/login                       | ✅           | ✅               | ✅
 └─ Register new account      | ✅ *4        | ✅ *4            | ✅ *4
 └─ Email validation          | ✅ *5        | ✅ *5            | ✅ *5
 └─ Password validation       | ✅ *6        | ✅ *6            | ✅ *6
 └─ Login with wrong creds    | ❌ *7        | ❌ *7            | ❌ *7
-
 /reservation                 | ❌ *8        | ✅               | ✅
 └─ View all reservations     | ❌           | ✅               | ✅
 └─ Create reservation        | ❌           | ✅               | ✅
@@ -19,11 +17,9 @@ Page / Feature                | Guest        | Reserver         | Administrator
 └─ Change reserver name      | ❌           | ✅ *11           | ✅
 └─ Edit resource from res.   | ❌           | ❌               | ✅
 └─ Edit res. dates           | ❌           | ✅ (own only)    | ✅
-
 /resources                   | ✅ *12       | ✅               | ✅
 └─ Add new resource          | ✅ *12       | ❌               | ✅
-└─ Symbols & numbers allowed| ✅           | ✅               | ✅
-
+└─ Symbols & numbers allowed| ✅            | ✅               | ✅
 Other Behaviors:
 - Email uniqueness           | ✅ *13       | ✅ *13           | ✅ *13
 
