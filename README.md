@@ -34,3 +34,6 @@ Cybersecurity and data privacy - Spring 2025
 | 16.3.2025 | 2 | Testing with hashcat  | Ran hashcat attack based on characters |
 | 22.3.2025 | 2 | Testing with burpsuite  | Ran attack with burpsuite |
 | 23.3.2025 | 2 | Testing with hydra  | Ran attack with hydra |
+| 03.4.2025 | 1 | Booking Phase Part 3  | Downloaded Docker compose and run it in Kali VM |
+| 03.4.2025 | 2 | Testing booking app: Browser testing  |  Fill the table template Pass/Fail |
+
