@@ -49,7 +49,6 @@ Other :Email uniqueness      | ✅ *13       | ✅ *13           | ✅ *13
 ### 🔒 ZAP Security Testing – Discovered Endpoints
 
 Below is a list of backend endpoints discovered through OWASP ZAP and verified for accessibility by different user roles.
-
 #### 📋 Endpoint Access Matrix
 
 | **Endpoint URL**                  | **Guest** | **Reserver** | **Admin** | **Notes**                                 |
@@ -59,10 +58,23 @@ Below is a list of backend endpoints discovered through OWASP ZAP and verified f
 | `/api/resources/13`              | ❌        | ✅           | ✅        | Resource detail view                      |
 | `/api/reservations/14`           | ❌        | ✅           | ✅        | Reserver may access own reservation only? |
 | `/api/session`                   | ✅        | ✅           | ✅        | Returns session/login info                |
+| `/logout`                        | ❌        | ❌           | ✅        | Admin can log out                         |
+| `/register`                      | ✅        | ✅           | ✅        | Registration page                         |
+| `/reservation`                   | ❌        | ✅           | ✅        | Reserver can make/edit reservations       |
+| `/reservation?id=14`             | ❌        | ✅           | ✅        | Reservation with specific ID              |
+| `/resources`                     | ✅        | ✅           | ✅        | Accessible resource list                  |
+| `/resources?id=13`               | ✅        | ✅           | ✅        | Resource with specific ID                 |
 | `/static/reservationsForm.js`    | ✅        | ✅           | ✅        | Public JS file                            |
 | `/static/resourceForm.js`        | ✅        | ✅           | ✅        | Public JS file                            |
 
 ---
+
+### Notes:
+- **Endpoints like `/api/resources` and `/api/reservations/14`** are accessible by both the reserver and admin, while guests are restricted.
+- **Admin-only resources** include `/api/users` and `/logout`.
+- **Guest users** have access to public pages such as `/register` and `/static/reservationsForm.js`.
+- **Reserver-only** access for endpoints like `/reservation` and `/reservation?id=14` for managing their own reservations.
+
 
 #### 🧠 Key Observations
 
