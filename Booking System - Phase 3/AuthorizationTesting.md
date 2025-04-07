@@ -26,6 +26,7 @@ Other :Email uniqueness      | ✅ *13       | ✅ *13           | ✅ *13
 
 ---
 
+
 ### Notes:
 - *1: Guest can bypass and add resource via direct URL (`/resources`)
 - *2: Reserver cannot add new resource
@@ -44,3 +45,37 @@ Other :Email uniqueness      | ✅ *13       | ✅ *13           | ✅ *13
 - *15: Guest can only see reservation data (ambiguous – read-only?)
 - *16: Reserver can access and edit others’ reservation via URL (security flaw)
 - *17: Time not available in date picker while reserving
+
+### 🔒 ZAP Security Testing – Discovered Endpoints
+
+Below is a list of backend endpoints discovered through OWASP ZAP and verified for accessibility by different user roles.
+
+#### 📋 Endpoint Access Matrix
+
+| **Endpoint URL**                  | **Guest** | **Reserver** | **Admin** | **Notes**                                 |
+|----------------------------------|-----------|--------------|-----------|-------------------------------------------|
+| `/api/users`                     | ❌        | ❌           | ✅        | Admin-only user list                      |
+| `/api/resources`                 | ❌        | ✅           | ✅        | Accessible via `GET`                      |
+| `/api/resources/13`              | ❌        | ✅           | ✅        | Resource detail view                      |
+| `/api/reservations/14`           | ❌        | ✅           | ✅        | Reserver may access own reservation only? |
+| `/api/session`                   | ✅        | ✅           | ✅        | Returns session/login info                |
+| `/static/reservationsForm.js`    | ✅        | ✅           | ✅        | Public JS file                            |
+| `/static/resourceForm.js`        | ✅        | ✅           | ✅        | Public JS file                            |
+
+---
+
+#### 🧠 Key Observations
+
+- **Guest Access**:
+  - Can access static files and session endpoint.
+  - Restricted from reservation/resource data.
+  - ⚠️ Can try accessing `/resources` via direct URL (`*12`).
+
+- **Reserver Access**:
+  - Can access their own resources and reservations.
+  - ⚠️ May access or edit others' reservations via ID in URL (`*16`).
+  - Can change reserver name (`*11`) — potential impersonation or data integrity risk.
+
+- **Admin Access**:
+  - Full access to all endpoints as expected.
+
