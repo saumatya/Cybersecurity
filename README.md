@@ -36,4 +36,6 @@ Cybersecurity and data privacy - Spring 2025
 | 23.3.2025 | 2 | Testing with hydra  | Ran attack with hydra |
 | 03.4.2025 | 1 | Booking Phase Part 3  | Downloaded Docker compose and run it in Kali VM |
 | 03.4.2025 | 2 | Testing booking app: Browser testing  |  Fill the table template Pass/Fail |
+| 06.4.2025 | 2 | Testing booking app with ZAP  |  Spider Active Scan Zap report generated for all activities |
+| 06.4.2025 | 2 | Testing with wfuzz and http |  Pages found in commond words |
 
