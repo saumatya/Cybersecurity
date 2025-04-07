@@ -89,5 +89,15 @@ Below is a list of backend endpoints discovered through OWASP ZAP and verified f
   - Can change reserver name (`*11`) — potential impersonation or data integrity risk.
 
 - **Admin Access**:
-  - Full access to all endpoints as expected.
+  - Full access to all endpoints as expected
+
+**wfuzz**
+ 
+  | Endpoint URL               | Guest | Reserver | Admin | Notes                         |
+|----------------------------|-------|----------|-------|-------------------------------|
+| `/login`                   | ✅    | ✅       | ✅    | Login page                    |
+| `/register`                | ✅    | ✅       | ✅    | Registration page             |
+| `/resources`               | ✅    | ✅       | ✅    | Resource page                 |
+| `/reservation`             | ❌    | ❌       | ✅    | Requires authentication (401) |
+
 
