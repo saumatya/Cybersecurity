@@ -38,4 +38,5 @@ Cybersecurity and data privacy - Spring 2025
 | 03.4.2025 | 2 | Testing booking app: Browser testing  |  Fill the table template Pass/Fail |
 | 06.4.2025 | 2 | Testing booking app with ZAP  |  Spider Active Scan Zap report generated for all activities |
 | 06.4.2025 | 2 | Testing with wfuzz and http |  Pages found in commond words |
+| 20.4.2025 | 3 |  Phase 4 GDPR | Created GDPR checklist |
 
